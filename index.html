@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TECHMILL</title>
+    <link rel="stylesheet" href="css/libs.css"/>
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+<div id="overlay" class="overlay"></div>
+<div class="wrapper">
+    <header class="header">
+        <div class="header__top">
+            <div class=" container  header__top-blocks">
+                <div class="header__top-block">
+                    <a href="#about" class="header__logo">
+                        <img src="img/logo_o.png">
+                        <img src="img/logo_o_spin.png" class="spin">
+                    </a>
+                    <div class="burger-menu" id="burgerMenu">
+                        <div class="burger-menu__line"></div>
+                        <div class="burger-menu__line"></div>
+                        <div class="burger-menu__line"></div>
+                    </div>
+                </div>
+                <div class="header__top-block">
+                    <div class="header__block-name">
+                        <div class="header__title">
+                            TECHMILL
+                        </div>
+                        <div class="header__subtitle">
+                            be digital. be smart
+                        </div>
+                    </div>
+                </div>
+                <div class="header__top-block">
+                    <div class="header__contacts">
+                        <div class="header__contacts-block">
+                            <a href="tel:+79995552636" class="header__contacts-item">
+                                <span class="header__contacts-icon"><img src="img/phone-grey.svg"></span>
+                                <span>+7 (999) 555 26 36</span>
+                            </a>
+                            <a href="mailto:support@tech-mill.ru" class="header__contacts-item">
+                                <span class="header__contacts-icon"><img src="img/mail-grey.svg"></span>
+                                <span>support@tech-mill.ru</span>
+                            </a>
+                        </div>
+                        <div class="header__contacts-block">
+                            <a href="https://wa.me/89995552635"  target="_blank" class="header__socials-icon">
+                                <img src="img/whatsApp.svg">
+                            </a>
+                            <a href="https://t.me/techmill_dental" target="_blank" class="header__socials-icon">
+                                <img src="img/telegram.svg">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="header__burger-mob">
+                        <div class="burger-menu" id="burgerMenuMob">
+                            <div class="burger-menu__line"></div>
+                            <div class="burger-menu__line"></div>
+                            <div class="burger-menu__line"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="container header__buttons-wrapper">
+                <div class="header__active-bg"></div>
+                <div class="header__buttons-block">
+                    <a href="#techMaintenance" class="header__button" data-target="techMaintenance">
+                        Тех. обслуживание
+                    </a>
+                    <a href="#repair" class="header__button" data-target="repair">
+                        Ремонт
+                    </a>
+                    <a href="#upgrade" class="header__button" data-target="upgrade">
+                        Upgrade
+                    </a>
+                    <a href="#consultation" class="header__button" data-target="consultation">
+                        Консультации
+                    </a>
+                    <a href="#materials" class="header__button" data-target="materials">
+                        Материалы и инструменты
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <div id="mobileMenu" class="mobile-menu">
+        <div class="mobile-menu__content">
+            <div class="mobile-menu__head">
+                <div class="mobile-menu__logo">
+                    <div class="header__block-name">
+                        <div class="header__title">
+                            TECHMILL
+                        </div>
+                        <div class="header__subtitle">
+                            be digital. be smart
+                        </div>
+                    </div>
+                </div>
+                <span id="closeMenu" class="mobile-menu__close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18"
+                         height="18" viewBox="0 0 18 18" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M0.292063 0.292063C0.479313 0.105045 0.733139 0 0.997786 0C1.26243 0 1.51626 0.105045 1.70351 0.292063L17.6821 16.2707C17.7803 16.3621 17.859 16.4724 17.9135 16.5949C17.9681 16.7174 17.9975 16.8496 17.9998 16.9837C18.0022 17.1178 17.9775 17.251 17.9273 17.3754C17.8771 17.4997 17.8023 17.6127 17.7075 17.7075C17.6127 17.8023 17.4997 17.8771 17.3754 17.9273C17.251 17.9775 17.1178 18.0022 16.9837 17.9998C16.8496 17.9975 16.7174 17.9681 16.5949 17.9135C16.4724 17.859 16.3621 17.7803 16.2707 17.6821L0.292063 1.70351C0.105045 1.51626 0 1.26243 0 0.997786C0 0.733139 0.105045 0.479313 0.292063 0.292063Z"
+                          fill="#2D1338"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M17.6816 0.292063C17.8686 0.479313 17.9736 0.733139 17.9736 0.997786C17.9736 1.26243 17.8686 1.51626 17.6816 1.70351L1.70292 17.6821C1.5136 17.8586 1.26321 17.9546 1.00449 17.95C0.745763 17.9455 0.498912 17.8407 0.31594 17.6577C0.132967 17.4747 0.0281579 17.2279 0.0235931 16.9691C0.0190282 16.7104 0.115064 16.46 0.291468 16.2707L16.2701 0.292063C16.4574 0.105045 16.7112 0 16.9758 0C17.2405 0 17.4943 0.105045 17.6816 0.292063Z"
+                          fill="#2D1338"/>
+                    </svg>
+                </span>
+            </div>
+            <nav class="mobile-menu__nav">
+                <div class="mobile-menu__nav-title">
+                    МЕНЮ
+                </div>
+                <a href="#techMaintenance">Тех. обслуживание</a>
+                <a href="#repair">Ремонт</a>
+                <a href="#upgrade">Upgrade</a>
+                <a href="#consultation">Консультации</a>
+                <a href="#materials">Материалы и инструменты</a>
+            </nav>
+            <div class="mobile-menu__contacts">
+                <div class="mobile-menu__nav-title">
+                    КОНТАКТЫ
+                </div>
+                <a href="tel:+79995552636" class="mobile-menu__contacts-item">
+                    <span class="header__contacts-icon"><img src="img/phone-lightgrey.svg"></span>
+                    <span>+7 (999) 555 26 36</span>
+                </a>
+                <a href="mailto:support@tech-mill.ru" class="mobile-menu__contacts-item">
+                    <span class="header__contacts-icon"><img src="img/mail-lightgrey.svg"></span>
+                    <span>support@tech-mill.ru</span>
+                </a>
+                <div class="mobile-menu__contacts-div">
+                <a href="https://wa.me/89995552635">
+                    <img src="img/whatsApp.svg">
+                </a>
+
+                <a href="https://t.me/techmill_dental">
+                    <img src="img/telegram.svg">
+                </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="container scroll about" id="about" data-section="about">
+        <div class="content">
+            <div class="about__blocks">
+                <div class="about__block-info">
+                    <h1 class="h1 about__title"> О компании </h1>
+                    <div class="about__text">
+                        <p>
+                            Команда Техмилл привествует Вас! <br>
+                            Наши специалисты помогут Вам в решении вопросов по ремонту и обслуживанию станков
+                            imes-icore.<br>
+                            Оперативный выезд и удаленная консультация сведут к минимуму простой оборудования, сохранят
+                            Ваши
+                            нервы, средства
+                            и лояльность клиентов.
+                        </p>
+                    </div>
+                    <div class="about__certificate">
+                        <div class="about__certificate-img">
+                            <a href="img/about/certificate.jpg" data-fancybox="gallery">
+                                <img src="img/about/certificate.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="about__certificate-item">
+                            <div class="about__certificate-img">
+                                <a href="img/about/certificateR.jpg" data-fancybox="gallery">
+                                    <img src="img/about/certificateR.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="about__certificate-img">
+                                <a href="img/about/certificateR.jpg" data-fancybox="gallery">
+                                    <img src="img/about/certificateR.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about__block-img">
+                    <div class="about__img">
+                        <img src="img/about/1.png" alt="">
+                    </div>
+                    <div class="about__img">
+                        <img src="img/about/2.png" alt="">
+                    </div>
+                    <div class="about__img">
+                        <img src="img/about/3.png" alt="">
+                    </div>
+                    <div class="about__img">
+                        <img src="img/about/4.png" alt="">
+                    </div>
+                    <div class="about__img">
+                        <img src="img/about/5.png" alt="">
+                    </div>
+                    <div class="about__img">
+                        <img src="img/about/6.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container scroll repair" id="techMaintenance" data-section="techMaintenance">
+        <div class="content">
+            <div class="repair__block">
+                <div class="repair__img">
+                    <img class="js-before" src="img/repair/2-1.png" alt="До ремонта" style="display:block">
+                    <img class="js-after" src="img/repair/2-6.jpg" alt="После ремонта" style="display:none">
+                    <div class="repair__text" style="display:none">
+                        <div class="comparison-container-text__title">
+                            Что было сделано
+                        </div>
+                        <div class="comparison-container-text__desc">
+                            <p>Описание работ по ремонту техники. Каждый мастер имеет богатый опты работы с определенным
+                                видом
+                                техники и имеет свою специализацию. Благодаря профессионализму и работе в команде
+                                каждого из наших
+                                мастеров, сервисный центр по ремонту техники обеспечивает своих клиентов быстрым,
+                                качественным и в
+                                то же время недорогим ремонтом любого вида техники. </p>
+                            <br>
+                            <p>Воспользовавшись нашими услугами, вы получаете
+                                высококлассный сервис и уверенность в том, что ваша богатый опыт работы, техника как и
+                                прежде, будет
+                                радовать бесперебойной надежной работой. </p>
+                        </div>
+
+                        <button class="comparison-container-text__button">Подробнее</button>
+
+                        <div class="repair__table-data" style="display:none">
+                            <div data-row='["Список", "350", "350L", "350PRO"]'></div>
+                            <div data-row='["Тестовое название", "+", "+", "+"]'></div>
+                            <!-- Добавьте остальные 6 строк -->
+                            <div data-row='["Тестовое название",  "+", "+", "+"]'></div>
+                            <div data-row='["Тестовое название", "", "+", "+"]'></div>
+                            <div data-row='["Тестовое название",  "", "+", "+"]'></div>
+                            <div data-row='["Тестовое название",  "", "", "+"]'></div>
+                            <div data-row='["Стоимость", "110 000 ₽ ", "110 000 ₽ ", "110 000 ₽ "]'></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="repair__img">
+                    <img class="js-before" src="img/repair/2-2.jpg" alt="">
+                    <img class="js-after" src="img/repair/2-3.jpg" alt="">
+
+                    <div class="repair__text" style="display:none">
+                        <div class="comparison-container-text__title">
+                            Что было сделано
+                        </div>
+                        <div class="comparison-container-text__desc">
+                            <p>Описание работ по ремонту техники. Каждый мастер имеет богатый опты работы с определенным
+                                видом
+                                техники и имеет свою специализацию. Благодаря профессионализму и работе в команде
+                                каждого из наших
+                                мастеров, сервисный центр по ремонту техники обеспечивает своих клиентов быстрым,
+                                качественным и в
+                                то же время недорогим ремонтом любого вида техники. </p>
+                            <br>
+                            <p>Воспользовавшись нашими услугами, вы получаете
+                                высококлассный сервис и уверенность в том, что ваша богатый опыт работы, техника как и
+                                прежде, будет
+                                радовать бесперебойной надежной работой. </p>
+                        </div>
+
+                        <button class="comparison-container-text__button">Подробнее</button>
+
+                        <div class="repair__table-data" style="display:none">
+                            <div data-row='["Список", "350", "350L", "350PRO"]'></div>
+                            <div data-row='["Тестовое название", "+", "+", "+"]'></div>
+                            <!-- Добавьте остальные 6 строк -->
+                            <div data-row='["Тестовое название",  "+", "+", "+"]'></div>
+                            <div data-row='["Тестовое название", "", "+", "+"]'></div>
+                            <div data-row='["Тестовое название",  "", "+", "+"]'></div>
+                            <div data-row='["Тестовое название",  "", "", "+"]'></div>
+                            <div data-row='["Стоимость", "110 000 ₽ ", "110 000 ₽ ", "110 000 ₽ "]'></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="repair__img">
+                    <img class="js-before" src="img/repair/2-3.jpg" alt="">
+                    <img class="js-after" src="img/repair/2-4.png" alt="">
+
+                    <div class="repair__text" style="display:none">
+                        <div class="comparison-container-text__title">
+                            Что было сделано
+                        </div>
+                        <div class="comparison-container-text__desc">
+                            <p>Описание работ по ремонту техники. Каждый мастер имеет богатый опты работы с определенным
+                                видом
+                                техники и имеет свою специализацию. Благодаря профессионализму и работе в команде
+                                каждого из наших
+                                мастеров, сервисный центр по ремонту техники обеспечивает своих клиентов быстрым,
+                                качественным и в
+                                то же время недорогим ремонтом любого вида техники. </p>
+                            <br>
+                            <p>Воспользовавшись нашими услугами, вы получаете
+                                высококлассный сервис и уверенность в том, что ваша богатый опыт работы, техника как и
+                                прежде, будет
+                                радовать бесперебойной надежной работой. </p>
+                        </div>
+
+                        <button class="comparison-container-text__button">Подробнее</button>
+
+                        <div class="repair__table-data" style="display:none">
+                            <div data-row='["Список", "350", "350L", "350PRO"]'></div>
+                            <div data-row='["Тестовое название", "+", "+", "+"]'></div>
+                            <!-- Добавьте остальные 6 строк -->
+                            <div data-row='["Тестовое название",  "+", "+", "+"]'></div>
+                            <div data-row='["Тестовое название", "", "+", "+"]'></div>
+                            <div data-row='["Тестовое название",  "", "+", "+"]'></div>
+                            <div data-row='["Тестовое название",  "", "", "+"]'></div>
+                            <div data-row='["Стоимость", "110 000 ₽ ", "110 000 ₽ ", "110 000 ₽ "]'></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="repair__img">
+                    <img class="js-before" src="img/repair/2-4.png" alt="">
+                    <img class="js-after" src="img/repair/2-5.jpg" alt="">
+
+                    <div class="repair__text" style="display:none">
+                        <div class="comparison-container-text__title">
+                            Что было сделано
+                        </div>
+                        <div class="comparison-container-text__desc">
+                            <p>Описание работ по ремонту техники. Каждый мастер имеет богатый опты работы с определенным
+                                видом
+                                техники и имеет свою специализацию. Благодаря профессионализму и работе в команде
+                                каждого из наших
+                                мастеров, сервисный центр по ремонту техники обеспечивает своих клиентов быстрым,
+                                качественным и в
+                                то же время недорогим ремонтом любого вида техники. </p>
+                            <br>
+                            <p>Воспользовавшись нашими услугами, вы получаете
+                                высококлассный сервис и уверенность в том, что ваша богатый опыт работы, техника как и
+                                прежде, будет
+                                радовать бесперебойной надежной работой. </p>
+                        </div>
+
+                        <button class="comparison-container-text__button">Подробнее</button>
+
+                        <div class="repair__table-data" style="display:none">
+                            <div data-row='["Список", "350", "350L", "350PRO"]'></div>
+                            <div data-row='["Тестовое название", "+", "+", "+"]'></div>
+                            <!-- Добавьте остальные 6 строк -->
+                            <div data-row='["Тестовое название",  "+", "+", "+"]'></div>
+                            <div data-row='["Тестовое название", "", "+", "+"]'></div>
+                            <div data-row='["Тестовое название",  "", "+", "+"]'></div>
+                            <div data-row='["Тестовое название",  "", "", "+"]'></div>
+                            <div data-row='["Стоимость", "110 000 ₽ ", "110 000 ₽ ", "110 000 ₽ "]'></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="repair__img">
+                    <img class="js-before" src="img/repair/2-5.jpg" alt="">
+                    <img class="js-after" src="img/repair/2-6.jpg" alt="">
+
+                    <div class="repair__text" style="display:none">
+                        <div class="comparison-container-text__title">
+                            Что было сделано
+                        </div>
+                        <div class="comparison-container-text__desc">
+                            <p>Описание работ по ремонту техники. Каждый мастер имеет богатый опты работы с определенным
+                                видом
+                                техники и имеет свою специализацию. Благодаря профессионализму и работе в команде
+                                каждого из наших
+                                мастеров, сервисный центр по ремонту техники обеспечивает своих клиентов быстрым,
+                                качественным и в
+                                то же время недорогим ремонтом любого вида техники. </p>
+                            <br>
+                            <p>Воспользовавшись нашими услугами, вы получаете
+                                высококлассный сервис и уверенность в том, что ваша богатый опыт работы, техника как и
+                                прежде, будет
+                                радовать бесперебойной надежной работой. </p>
+                        </div>
+
+                        <button class="comparison-container-text__button">Подробнее</button>
+
+                        <div class="repair__table-data" style="display:none">
+                            <div data-row='["Список", "350", "350L", "350PRO"]'></div>
+                            <div data-row='["Тестовое название", "+", "+", "+"]'></div>
+                            <!-- Добавьте остальные 6 строк -->
+                            <div data-row='["Тестовое название",  "+", "+", "+"]'></div>
+                            <div data-row='["Тестовое название", "", "+", "+"]'></div>
+                            <div data-row='["Тестовое название",  "", "+", "+"]'></div>
+                            <div data-row='["Тестовое название",  "", "", "+"]'></div>
+                            <div data-row='["Стоимость", "110 000 ₽ ", "110 000 ₽ ", "110 000 ₽ "]'></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="repair__img">
+                    <img class="js-before" src="img/repair/2-6.jpg" alt="">
+                    <img class="js-after" src="img/repair/2-1.png" alt="">
+
+                    <div class="repair__text" style="display:none">
+                        <div class="comparison-container-text__title">
+                            Что было сделано
+                        </div>
+                        <div class="comparison-container-text__desc">
+                            <p>Описание работ по ремонту техники. Каждый мастер имеет богатый опты работы с определенным
+                                видом
+                                техники и имеет свою специализацию. Благодаря профессионализму и работе в команде
+                                каждого из наших
+                                мастеров, сервисный центр по ремонту техники обеспечивает своих клиентов быстрым,
+                                качественным и в
+                                то же время недорогим ремонтом любого вида техники. </p>
+                            <br>
+                            <p>Воспользовавшись нашими услугами, вы получаете
+                                высококлассный сервис и уверенность в том, что ваша богатый опыт работы, техника как и
+                                прежде, будет
+                                радовать бесперебойной надежной работой. </p>
+                        </div>
+
+                        <button class="comparison-container-text__button">Подробнее</button>
+
+                        <div class="repair__table-data" style="display:none">
+                            <div data-row='["Список", "350", "350L", "350PRO"]'></div>
+                            <div data-row='["Тестовое название", "+", "+", "+"]'></div>
+                            <!-- Добавьте остальные 6 строк -->
+                            <div data-row='["Тестовое название",  "+", "+", "+"]'></div>
+                            <div data-row='["Тестовое название", "", "+", "+"]'></div>
+                            <div data-row='["Тестовое название",  "", "+", "+"]'></div>
+                            <div data-row='["Тестовое название",  "", "", "+"]'></div>
+                            <div data-row='["Стоимость", "110 000 ₽ ", "110 000 ₽ ", "110 000 ₽ "]'></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container scroll upgrade" id="repair" data-section="repair">
+        <div class="content">
+            <div class="upgrade__blocks">
+                <div class="upgrade__block _head">
+                    <div class="upgrade__item">
+                        <div class="upgrade__item-text">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            </p>
+                        </div>
+                        <div class="upgrade__item-img">
+                            <img src="img/about/4.png" alt="">
+                        </div>
+                    </div>
+                    <div class="upgrade__item">
+                        <div class="upgrade__item-text">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            </p>
+                        </div>
+                        <div class="upgrade__item-img">
+                            <img src="img/about/2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="upgrade__block _center">
+                    <div class="upgrade__item">
+                        <div class="upgrade__item-img">
+                            <img src="img/about/6.png" alt="">
+                        </div>
+                        <div class="upgrade__item-text">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="upgrade__block _bottom">
+                    <div class="upgrade__item">
+                        <div class="upgrade__item-img">
+                            <img src="img/about/1.png" alt="">
+                        </div>
+                        <div class="upgrade__item-text">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            </p>
+                        </div>
+                    </div>
+                    <div class="upgrade__item">
+                        <div class="upgrade__item-img">
+                            <img src="img/about/3.png" alt="">
+                        </div>
+                        <div class="upgrade__item-text">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="block-follow"><a class="block-follow__link" href="https://t.me/techmill_dental" target="_blank">Следите за нами</a>
+                <span>
+                    <img src="img/telegram.svg" alt="">
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <section class="container scroll consultation" id="upgrade" data-section="upgrade">
+        <div class="content">
+            <div class="consultation__blocks">
+                <div class="consultation__block">
+                    <div class="consultation__img">
+                        <img src="img/consultation/4-1.png" alt="">
+                    </div>
+                    <div class="consultation__img">
+                        <img src="img/consultation/4-2.png" alt="">
+                    </div>
+                </div>
+                <div class="consultation__block">
+                    <div class="consultation__content">
+                        <div class="consultation__content-text">
+                            <p>
+                                Нет предела совершенству
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
+                        </div>
+                        <div class="consultation__follow">
+                            <div class="block-follow">
+                                <a class="block-follow__link" href="https://t.me/techmill_dental" target="_blank">Следите за нами</a>
+                                <span>
+                            <img src="img/telegram.svg" alt="">
+                        </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="consultation__block">
+                    <div class="consultation__img">
+                        <img src="img/consultation/4-3.png" alt="">
+                    </div>
+                    <div class="consultation__img">
+                        <img src="img/consultation/4-4.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container scroll information" id="consultation" data-section="consultation">
+        <div class="content">
+            <div class="information__blocks">
+                <div class="information__block-text">
+                    <p>
+                        Мы поможем Вам в любой точке мирамаксимально оперативно решить поставленную задачу по устранению
+                        ошибок
+                    </p>
+                    <span> SUM3D\MillBox:</span>
+                    <ul class="information__list">
+                        <li>Помощь в просчете сложного проекта</li>
+                        <li>Модификация тратегий под индивидуальный запрос</li>
+                        <li>Восстановление работоспособности программ</li>
+                        <li>Базовое обучение с предоставлением методического материала</li>
+                    </ul>
+                    <span> Remote:</span>
+                    <ul class="information__list">
+                        <li>Помощь в калибровке станка</li>
+                        <li>Калибровка и настройка картриджей для Premill\E-max</li>
+                        <li>Исправление ошибок станка</li>
+                        <li>Диагностика оборудования CAD-CAM</li>
+                    </ul>
+
+                    <div class="block-we-use"><span class="block-we-use__text">Мы используем</span>
+                        <a href="https://anydesk.com/ru" target="_blank" class="block-we-use__logo">
+                            <img src="img/anydesk.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="information__block-img">
+                    <div class="information__block-img-grid">
+                        <div class="information__img small">
+                            <img src="img/about/6.png" alt="">
+                        </div>
+                        <div class="information__img small">
+                            <img src="img/consultation/4-2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="information__img large">
+                        <img src="img/about/2.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container scroll materials" id="materials" data-section="materials">
+        <div class="content">
+            <div class="materials__blocks">
+                <div class="materials__block-text">
+                    <p class="materials__title title">
+                        Вы можете приобрести расходные материалы и инструменты, проверенные нашими инженерами
+                    </p>
+                </div>
+                <div class="materials__block-img">
+                    <div class="materials__img-grid">
+                        <div class="materials__img">
+                            <img src="img/about/1.png" alt="">
+                        </div>
+                        <div class="materials__img">
+                            <img src="img/about/6.png" alt="">
+                        </div>
+                        <div class="materials__img">
+                            <img src="img/repair/2-3.jpg" alt="">
+                        </div>
+                        <div class="materials__img">
+                            <img src="img/consultation/4-2.png" alt="">
+                        </div>
+                        <div class="materials__img">
+                            <img src="img/materials/1.png" alt="">
+                        </div>
+                        <div class="materials__img">
+                            <img src="img/about/1.png" alt="">
+                        </div>
+                        <div class="materials__img">
+                            <img src="img/about/2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="container footer">
+            <div class="footer__blocks">
+                <div class="footer__logo">
+                    <img src="img/logo.png">
+                    <span class="footer__logo-name"> TECHMILL </span>
+                </div>
+                <div class="footer__copiright">
+                    © Techmill 2025 All Rights Reserved
+                </div>
+                <div class="footer__copiright conditions">
+                    Условия использования информации
+                </div>
+                <a href="tel:+79995552636" class="footer__contacts-item">
+                    <span class="footer__contacts-icon"><img src="img/phone.svg"></span>
+                    <span>+7 (999) 555 26 36</span>
+                </a>
+                <a href="mailto:support@tech-mill.ru" class="footer__contacts-item">
+                    <span class="footer__contacts-icon"><img src="img/mail.svg"></span>
+                    <span>support@tech-mill.ru</span>
+                </a>
+            </div>
+        </footer>
+    </section>
+</div>
+<div class="comparison-popup" id="comparisonPopup">
+    <div class="comparison-popup__content">
+        <span class="comparison-popup__close"><img src="img/x-circle.svg"></span>
+        <div class="comparison-wrapper">
+            <div class="comparison-container">
+                <img class="comparison-before" id="comparisonBeforeImg" src="" alt="До">
+                <img class="comparison-after" id="comparisonAfterImg" src="" alt="После">
+                <div class="comparison-handle">
+                </div>
+            </div>
+            <div class="comparison-container-text" id="dynamicTextContainer"></div>
+        </div>
+    </div>
+</div>
+
+<div class="details-popup" id="detailsPopup">
+    <div class="details-popup__content">
+        <span class="details-popup__close"><img src="img/x-circle.svg"></span>
+        <div class="details-table">
+            <table>
+                <thead>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="conditions-popup" id="conditionsPopup">
+    <div class="conditions-popup__content">
+        <span class="conditions-popup__close"><img src="img/x-circle.svg"></span>
+        <div class="conditions-container-text">
+            <p>Обращаем Ваше внимание на то, что данный интернет-сайт носит исключительно информационный характер и ни при
+            каких условиях не является публичной офертой, определяемой положениями Статьи 437 (2) Гражданского кодекса
+                Российской Федерации.</p>
+            <p>Цены, комплектации, изображения и характеристики изделий могут быть изменены без предварительного
+                уведомления.</p>
+            <p>Для получения подробной и актуальной информации, включая наличие и стоимость указанных товаров и (или)
+                услуг, пожалуйста, обращайтесь по электронному адресу (support@tech-mill.ru) или по телефону.</p>
+            <p>Использование любых материалов с сайта "tech-mill.ru" разрешается только со ссылкой на него.</p>
+
+        </div>
+    </div>
+</div>
+<script src="js/libs.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
